@@ -1,0 +1,21 @@
+.service-privacy {
+  display: grid;
+  grid-template-columns: 432px auto;
+  grid-template-rows: 300px;
+  background-color: #0195ff;
+}
+.service-privacy img {
+  height: 100%;
+  margin-right: 10px;
+  justify-self: center;
+}
+.service-text-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-text-side img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}

@@ -1,0 +1,7 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  background-color: lightgrey;
+  justify-content: center;
+}

@@ -1,0 +1,17 @@
+.service-details-section {
+  background-color: #f5f5ff;
+  height: 100vh;
+}
+.service-details-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 85vh;
+
+  margin: 10px 30px;
+}
+.service-details-image {
+  align-items: end;
+}
+.service-details-image img {
+  width: 100%;
+}

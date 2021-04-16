@@ -1,0 +1,19 @@
+.testimonial-cart {
+  background-color: #d2dfff99;
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  padding: 10px;
+}
+.testimonial-cart img {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.testimonial-cart p {
+  grid-column: 1/-1;
+  color: #5c5cd2;
+}

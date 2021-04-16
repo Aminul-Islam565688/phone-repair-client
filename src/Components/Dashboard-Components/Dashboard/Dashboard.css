@@ -1,0 +1,19 @@
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 100vh;
+}
+.dashboard-aside {
+  background-color: slateblue;
+  padding: 20px;
+}
+.dashboard-aside img {
+  width: 80%;
+}
+.dashboard-aside li {
+  list-style: none;
+}
+.dashboard-aside li a {
+  color: white;
+  text-decoration: none;
+}

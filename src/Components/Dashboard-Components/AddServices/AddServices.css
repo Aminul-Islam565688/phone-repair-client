@@ -1,0 +1,11 @@
+.addService-form {
+  grid-gap: 20px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(2, 50px);
+}
+.addService-form textarea {
+  resize: none;
+  height: 50px;
+}

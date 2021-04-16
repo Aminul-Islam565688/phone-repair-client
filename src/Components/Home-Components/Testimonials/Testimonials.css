@@ -1,0 +1,15 @@
+.testimonial-section {
+  background-image: url(../../../images/testimonial-bg.jpg);
+  /* background-color: slateblue; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.testimonial-cart-container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+}
