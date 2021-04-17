@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import avatar from '../../../images/avatar.png';
 import TestimonialsCart from '../TestimonialsCart/TestimonialsCart';
 import './Testimonials.css';
@@ -25,11 +25,18 @@ const testimonialData = [
 ]
 
 const Testimonials = () => {
+    const [review, setReview] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:1526/getCustomerReview')
+            .then(res => res.json())
+            .then(data => setReview(data))
+    }, [])
+    console.log(review);
     return (
         <section className='testimonial-section'>
             <h1>This is Testimonials</h1>
             <div className='testimonial-cart-container'>
-                {testimonialData.map(review => <TestimonialsCart review={review} key={review.key}></TestimonialsCart>)}
+                {review.map(review => <TestimonialsCart review={review} key={review._id}></TestimonialsCart>)}
             </div>
         </section>
     );

@@ -8,6 +8,8 @@ import './App.css';
 import Dashboard from './Components/Dashboard-Components/Dashboard/Dashboard';
 import Home from './Components/Home-Components/Home/Home';
 import Login from './Components/Login-Components/Login/Login';
+import PrivateRoute from './Components/Login-Components/PrivateRoute/PrivateRoute';
+import Payments from './Components/Payments/Payments';
 import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
 
 export const UserContext = createContext();
@@ -20,18 +22,18 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
-          {/* <Route path="/about">
-            <About />
-          </Route> */}
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/serviceDetails/:serviceId">
+          <Route path="/payments">
+            <Payments></Payments>
+          </Route>
+          <PrivateRoute path="/serviceDetails/:serviceId">
             <ServiceDetails></ServiceDetails>
-          </Route>
-          <Route path="/dashboard">
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard">
             <Dashboard></Dashboard>
-          </Route>
+          </PrivateRoute>
           <Route path="/">
             <Home></Home>
           </Route>

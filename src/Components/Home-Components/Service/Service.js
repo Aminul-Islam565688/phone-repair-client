@@ -71,6 +71,7 @@ const Service = () => {
         <section className='my-5'>
             <div className="my-5">
                 <h1 className='my-3 phone-text'>Our Service</h1>
+                {services.length === 0 && <p>Loading...</p>}
                 <div className='grid-container phone-container'>
                     {services.map(service => <ServiceCart service={service} key={service._id}></ServiceCart>)}
                 </div>

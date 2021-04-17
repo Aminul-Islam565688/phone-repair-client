@@ -4,9 +4,10 @@ import './TestimonialsCart.css';
 const TestimonialsCart = ({ review }) => {
     return (
         <div className='testimonial-cart'>
-            <img src={review.avatarImg} alt="" />
+            <img src={review.photo} alt="" />
             <h3>{review.name}</h3>
-            <p>{review.review}</p>
+            <h4>{review.company}</h4>
+            <p>{review.description}</p>
         </div>
     );
 };
