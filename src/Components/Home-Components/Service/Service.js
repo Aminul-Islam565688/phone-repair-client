@@ -62,7 +62,7 @@ const corporateServiceData = [
 const Service = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:1526/getServices')
+        fetch('https://immense-brook-80254.herokuapp.com/getServices')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
@@ -70,12 +70,12 @@ const Service = () => {
     return (
         <section className='my-5'>
             <div className="my-5">
-                <h1 className='my-3 phone-text'>Our Service</h1>
+                <h1 className='mt-3 mb-5 phone-text'>OUR SERVICE</h1>
                 {services.length === 0 && <p>Loading...</p>}
                 <div className='grid-container phone-container'>
                     {services.map(service => <ServiceCart service={service} key={service._id}></ServiceCart>)}
                 </div>
-                <div className='service-privacy my-5'>
+                <div className='service-privacy my-5 text-white'>
                     <img src={phoneImg} alt="" />
                     <div className='service-text-side'>
                         <img src={shield} alt="" />

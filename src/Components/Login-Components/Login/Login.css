@@ -1,3 +1,18 @@
 .login-section-main {
-  background-color: lightgrey;
+}
+.login-btn {
+  border: none;
+  background-color: #007cff;
+  color: white;
+  outline: none;
+  display: block;
+  margin: 100px auto;
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 10px 8px 10px lightgrey;
+  transition: 1s;
+}
+.login-btn:hover {
+  transform: scale(1.1);
 }

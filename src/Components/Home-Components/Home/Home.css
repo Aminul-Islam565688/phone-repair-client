@@ -1,23 +1,40 @@
 /* HEADER SECTION */
 .header-section {
-  background: url(../../../images/header-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 616px;
+  /* height: 616px; */
 }
 .header-title {
   font-size: 60px;
 }
 .header-description {
-  font-size: 23px;
+  font-size: 20px;
   margin: 50px 0;
-  color: rgb(226 219 219);
+  color: #a0a0a0;
 }
 /* HEADER-MAIN SECTION */
 .header-main-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
   text-align: center;
-  height: 500px;
+  /* height: 500px; */
+}
+.header-aside-img img {
+  width: 100%;
+}
+.header-text-side {
+  align-self: center;
+}
+.header-main-btn {
+  box-shadow: 10px 8px 10px lightgrey;
+}
+.header-main-btn:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 860px) {
+  .header-main-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header-text-side {
+    grid-row: 2/3;
+  }
 }

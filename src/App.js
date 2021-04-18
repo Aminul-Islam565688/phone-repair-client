@@ -31,10 +31,13 @@ function App() {
           <PrivateRoute path="/serviceDetails/:serviceId">
             <ServiceDetails></ServiceDetails>
           </PrivateRoute>
-          <PrivateRoute path="/dashboard">
+          <PrivateRoute path="/dashboard/order">
             <Dashboard></Dashboard>
           </PrivateRoute>
-          <Route path="/">
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route exact path="/">
             <Home></Home>
           </Route>
         </Switch>

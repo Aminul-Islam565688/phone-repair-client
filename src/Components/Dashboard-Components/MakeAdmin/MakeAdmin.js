@@ -9,7 +9,7 @@ const MakeAdmin = () => {
         adminFormData.append('name', data.name)
         adminFormData.append('email', data.email)
         console.log(adminFormData);
-        fetch('http://localhost:1526/makeAdmin', {
+        fetch('https://immense-brook-80254.herokuapp.com/makeAdmin', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

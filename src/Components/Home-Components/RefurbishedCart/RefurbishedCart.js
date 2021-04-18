@@ -6,7 +6,7 @@ const RefurbishedCart = ({ pd }) => {
         <div className='refurbished-cart'>
             <img src={pd.pdImg} alt="" />
             <h4 className='text-center'>{pd.pdName}</h4>
-            <h6 className='text-center'>${pd.pdPrice}</h6>
+            <h5 className='text-center'>${pd.pdPrice}</h5>
             <button className='refurbished-btn'>Add to Cart</button>
         </div>
     );

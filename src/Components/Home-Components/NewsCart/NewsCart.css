@@ -1,0 +1,7 @@
+.news-date {
+  height: fit-content !important;
+}
+.news-date-author {
+  display: flex;
+  justify-content: space-between;
+}

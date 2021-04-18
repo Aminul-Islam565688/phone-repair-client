@@ -37,7 +37,7 @@ const newsData = [
 const News = () => {
     return (
         <section className='my-5'>
-            <h1 className='phone-text'>OUR NEWS</h1>
+            <h1 className='phone-text my-5'>OUR NEWS</h1>
             <div className='grid-container phone-container'>
                 {newsData.map(news => <NewsCart news={news} key={news.key}></NewsCart>)}
             </div>

@@ -153,7 +153,7 @@ const SimplePaymentForm = () => {
             const serviceImg = sessionStorage.getItem('serviceImage')
             const { card, type } = payload.paymentMethod
             const paymentData = { ...loggedInUser, card: card, type: type, serviceImg: serviceImg }
-            fetch('http://localhost:1526/addCustomer', {
+            fetch('https://immense-brook-80254.herokuapp.com/addCustomer', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -238,9 +238,9 @@ const SimplePaymentForm = () => {
                 />
             </fieldset>
             {error && <ErrorMessage>{error.message}</ErrorMessage>}
-            <SubmitButton processing={processing} error={error} disabled={!stripe}>
+            {loggedInUser.service ? <SubmitButton processing={processing} error={error} disabled={!stripe}>
                 Pay ${cost}
-            </SubmitButton>
+            </SubmitButton> : <h2>Please Select Product First</h2>}
         </form>
     );
 };

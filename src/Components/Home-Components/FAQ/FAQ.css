@@ -21,3 +21,18 @@
   height: 170px;
   resize: none;
 }
+.faq-btn:hover {
+  box-shadow: 10px 8px 10px lightgrey;
+  transform: scale(1.1);
+}
+@media (max-width: 860px) {
+  .faq-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .faq-form-input {
+    width: 430px;
+  }
+  .faq-form-textArea {
+    width: 430px;
+  }
+}

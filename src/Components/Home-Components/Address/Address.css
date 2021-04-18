@@ -24,3 +24,23 @@
   justify-self: center;
   align-self: center;
 }
+/* width="1263" height="450"  */
+.map {
+  width: 1263px;
+  height: 450px;
+}
+@media (max-width: 860px) {
+  .address {
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: auto;
+    height: 400px;
+    grid-gap: 0;
+  }
+  .address-item {
+    justify-content: start;
+  }
+  .map {
+    width: 483px;
+    height: 450px;
+  }
+}

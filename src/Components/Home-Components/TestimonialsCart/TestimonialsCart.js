@@ -5,8 +5,10 @@ const TestimonialsCart = ({ review }) => {
     return (
         <div className='testimonial-cart'>
             <img src={review.photo} alt="" />
-            <h3>{review.name}</h3>
-            <h4>{review.company}</h4>
+            <div className='testimonial-name'>
+                <h3>{review.name}</h3>
+                <h6>{review.company}</h6>
+            </div>
             <p>{review.description}</p>
         </div>
     );

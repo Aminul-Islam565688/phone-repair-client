@@ -4,16 +4,27 @@
   grid-template-rows: 100vh;
 }
 .dashboard-aside {
-  background-color: slateblue;
+  background-color: #0195ff;
   padding: 20px;
 }
-.dashboard-aside img {
+.dashboard-aside-logo img {
   width: 80%;
 }
 .dashboard-aside li {
   list-style: none;
+  margin: 20px 0;
+}
+.dashboard-aside li:last-child {
+  margin-top: 250px;
 }
 .dashboard-aside li a {
   color: white;
+  font-size: 20px;
   text-decoration: none;
+}
+.aside-icon {
+  width: 15%;
+  height: 10%;
+  margin-top: -7px;
+  margin-right: 7px;
 }

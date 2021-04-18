@@ -19,3 +19,19 @@
   height: 100px;
   margin-right: 20px;
 }
+@media (max-width: 860px) {
+  .service-privacy {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px;
+  }
+  .service-privacy img {
+    width: 100%;
+    grid-row: 2/3;
+  }
+  .service-text-side img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+}

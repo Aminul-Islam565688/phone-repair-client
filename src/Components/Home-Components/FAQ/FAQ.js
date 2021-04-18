@@ -21,7 +21,7 @@ const FAQ = () => {
                         <br />
                         <textarea className='faq-form-textArea mb-2' placeholder='Enter your Question'{...register("question")}></textarea>
                         <br />
-                        <input className='phone-btn' value='Ask' type="submit" />
+                        <input className='phone-btn faq-btn' value='Ask' type="submit" />
                     </form>
                 </div>
             </div>

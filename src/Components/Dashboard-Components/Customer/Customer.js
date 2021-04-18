@@ -6,7 +6,7 @@ const Customer = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [customersList, setCustomersList] = useState([])
     useEffect(() => {
-        fetch('http://localhost:1526/getCustomers')
+        fetch('https://immense-brook-80254.herokuapp.com/getCustomers')
             .then(res => res.json())
             .then(data => setCustomersList(data))
     }, [])
@@ -28,7 +28,13 @@ const Customer = () => {
                         <td>{customer.email}</td>
                         <td>{customer.service}</td>
                         <td>{customer.card.brand} {customer.type}</td>
-                        <td>{customer.status}</td>
+                        <td>
+                            <select name="cars" id="cars">
+                                <option style={{ color: 'red' }} value={customer.status}>{customer.status}</option>
+                                <option style={{ color: 'yellow' }} value="On Going">On Going</option>
+                                <option style={{ color: 'green' }} value="Done">Done</option>
+                            </select>
+                        </td>
                     </tr>
                 ))}
             </table>

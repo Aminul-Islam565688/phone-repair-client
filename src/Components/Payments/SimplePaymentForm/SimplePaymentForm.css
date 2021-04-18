@@ -52,6 +52,7 @@ body {
 
 .Form {
   animation: fade 200ms ease-out;
+  margin-top: 50px;
 }
 
 .FormGroup {
@@ -209,7 +210,4 @@ body {
   border: 0;
   cursor: pointer;
   background: transparent;
-}
-.payment-form {
-  background-color: slateblue;
 }

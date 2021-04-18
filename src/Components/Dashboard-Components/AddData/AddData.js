@@ -14,7 +14,7 @@ const AddServices = () => {
         formData.append('description', data.description)
         formData.append('cost', data.cost)
         formData.append('file', data.img[0])
-        fetch('http://localhost:1526/addService', {
+        fetch('https://immense-brook-80254.herokuapp.com/addService', {
             method: 'POST',
             body: formData
         })
@@ -44,7 +44,7 @@ const AddServices = () => {
     //     e.preventDefault()
     //     const corpoData = { corpoService, corpoFile };
     //     console.log(corpoData);
-    //     fetch('http://localhost:1526/addCorpoService', {
+    //     fetch('https://immense-brook-80254.herokuapp.com/addCorpoService', {
     //         method: 'POST',
     //         body: { tile: corpoService.title, description: corpoService.description, cost: corpoService.cost, corpoFile }
     //     })
@@ -66,7 +66,7 @@ const AddServices = () => {
                 <div>
                     <form className='addService-form' onSubmit={handleSubmit(onSubmit)}>
                         <input placeholder='Enter Title' {...register("title")} />
-                        <input type='file'{...register("img")} />
+                        <input id='file' type='file'{...register("img")} />
                         <textarea placeholder='Enter Description'  {...register("description")} ></textarea>
                         <input placeholder='Service Cost' {...register("cost")} />
                         <input type="submit" />

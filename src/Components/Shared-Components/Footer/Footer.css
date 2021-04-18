@@ -2,6 +2,57 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  background-color: lightgrey;
   justify-content: center;
+}
+.footer-company {
+  padding: 10px;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.footer-list li {
+  list-style: none;
+}
+.footer-address {
+  align-self: center;
+}
+.footer-icon {
+  color: #0195ff;
+  margin-right: 9px;
+}
+.footer-social-icon {
+  color: #0195ff;
+  font-size: 30px;
+  margin-right: 9px;
+  cursor: pointer;
+}
+.footer-section {
+  background-color: black;
+}
+.footer-copyright-text {
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+@media (max-width: 860px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 12px;
+  }
+  .footer-address {
+    grid-column: 1/-1;
+  }
+  .footer-company {
+    margin-left: 10px;
+    margin-top: 21px;
+  }
+  .footer-list {
+    margin-top: 10px;
+    justify-content: end;
+  }
+  .footer-copyright-text {
+    font-size: 10px;
+  }
 }

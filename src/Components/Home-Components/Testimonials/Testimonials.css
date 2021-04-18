@@ -1,15 +1,20 @@
 .testimonial-section {
-  background-image: url(../../../images/testimonial-bg.jpg);
+  /* background-image: url(../../../images/testimonial-bg.jpg); */
   /* background-color: slateblue; */
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
 }
 .testimonial-cart-container {
   display: grid;
   grid-template-columns: repeat(3, 350px);
-  grid-template-rows: auto;
+  grid-template-rows: minmax(200px, auto);
   justify-content: center;
   align-items: center;
   grid-gap: 30px;
+}
+@media (max-width: 860px) {
+  .testimonial-cart-container {
+    grid-template-columns: repeat(1, 350px);
+    grid-gap: 15px;
+  }
 }

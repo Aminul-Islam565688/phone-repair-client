@@ -12,7 +12,7 @@ const ServiceDetails = () => {
     const [serviceDetails, setServiceDetails] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:1526/serviceDetails/${serviceId}`)
+        fetch(`https://immense-brook-80254.herokuapp.com/serviceDetails/${serviceId}`)
             .then(data => data.json())
             .then(res => setServiceDetails(res))
     }, [serviceId])

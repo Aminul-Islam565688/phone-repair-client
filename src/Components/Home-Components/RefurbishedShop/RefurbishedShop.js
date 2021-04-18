@@ -35,7 +35,7 @@ const RefurbishedShop = () => {
     ]
     return (
         <section>
-            <h3 className='phone-text'>REFURBISHED DEVICE SHOP</h3>
+            <h3 className='phone-text my-5'>REFURBISHED DEVICE SHOP</h3>
             <div className='refurbished-container'>
                 {refurbishedPdData.map(pd => <RefurbishedCart pd={pd} key={pd.id}></RefurbishedCart>)}
             </div>

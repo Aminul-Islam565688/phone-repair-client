@@ -7,7 +7,7 @@ import './AboutUs.css';
 const AboutUs = () => {
     return (
         <section className='my-5'>
-            <h1 className='phone-text'>ABOUT US</h1>
+            <h1 className='phone-text my-5'>ABOUT US</h1>
             <div className='aboutUs-container phone-container'>
                 <div className='aboutUs-text-side'>
                     <div className='item-1'>
@@ -27,7 +27,7 @@ const AboutUs = () => {
                     <div className='item-3'>
                         <h4>QUALITY GUARANTEE</h4>
                         <p className='text-secondary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam illo aliquam, possimus id ratione quas libero doloribus iure sit nostrum nemo error optio voluptatum quaerat minus doloremque! Eum unde officiis beatae dicta odio mollitia porro sed, voluptas quas tempore, adipisci ducimus asperiores nulla repellendus nam reprehenderit quidem, fuga harum minima corporis soluta officia. Incidunt blanditiis earum minus unde explicabo ipsa facere, doloribus iusto saepe illo veritatis maiores nesciunt quas!</p>
-                        <button className='phone-btn'>READ MORE</button>
+                        <button className='phone-btn about-btn'>READ MORE</button>
                     </div>
                 </div>
                 <div className='aboutUs-image'>

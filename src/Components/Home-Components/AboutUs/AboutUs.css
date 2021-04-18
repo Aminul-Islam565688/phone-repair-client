@@ -17,6 +17,12 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
 }
+.about-btn {
+  box-shadow: 10px 8px 10px lightgrey;
+}
+.about-btn:hover {
+  transform: scale(1.1);
+}
 .item-1,
 .item-2 {
   display: grid;
@@ -24,4 +30,17 @@
 }
 .item-3 {
   grid-column: 1/-1;
+}
+@media (max-width: 860px) {
+  .aboutUs-container {
+    grid-gap: 30px;
+  }
+  .aboutUs-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aboutUs-text-side {
+    grid-row: 2/3;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
 }

@@ -1,5 +1,6 @@
 .navbar-main {
-  padding: 10px;
+  background-color: #007cff;
+  padding: 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,11 +19,59 @@
 .navbar-links li a {
   text-decoration: none;
   font-size: 18px;
-  transition: 0.3s;
+  transition: 0.2s;
   padding: 15px 10px;
+  border-radius: 3px;
   color: white;
 }
 .navbar-links li a:hover {
-  background-color: yellow;
-  text-decoration: underline;
+  /* background-color: #aacbff; */
+  background-color: #d6e6ff;
+  color: black;
+}
+.toggle-button {
+  position: absolute;
+  top: -0.2rem;
+  right: 2.5rem;
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+.toggle-button img {
+  position: relative;
+  top: 16px;
+  width: 100%;
+}
+@media (max-width: 860px) {
+  .toggle-button {
+    display: flex;
+  }
+  .toggle-button .bar {
+    height: 6px;
+    width: 57px;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    background-color: #00000012;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a:hover {
+    background-color: none;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
 }

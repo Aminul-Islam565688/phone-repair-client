@@ -1,0 +1,22 @@
+.customer-service-container {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: auto;
+  grid-gap: 30px;
+}
+.customer-service-cart {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #0195ff42;
+}
+.customer-service-cart p {
+  height: 50px;
+  overflow: hidden;
+}
+.service-card-top {
+  display: flex;
+  justify-content: space-between;
+}

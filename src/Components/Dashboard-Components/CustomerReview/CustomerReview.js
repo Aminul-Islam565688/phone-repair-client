@@ -12,7 +12,7 @@ const CustomerReview = () => {
             company: data.companyName,
             description: data.description,
         }
-        fetch('http://localhost:1526/customerReview', {
+        fetch('https://immense-brook-80254.herokuapp.com/customerReview', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -37,7 +37,7 @@ const CustomerReview = () => {
                 <br />
                 <textarea className='faq-form-textArea mb-2' placeholder='Description'{...register("description")}></textarea>
                 <br />
-                <input className='phone-btn' value='Ask' type="submit" />
+                <input className='phone-btn' value='Review' type="submit" />
             </form>
         </div>
     );

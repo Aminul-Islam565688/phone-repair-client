@@ -1,11 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../../../App';
+import './CustomerServiceList.css';
 
 const CustomerServiceList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [customerServiceList, setCustomerServiceList] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:1526/customerServiceList?email=${loggedInUser.email}`)
+        fetch(`https://immense-brook-80254.herokuapp.com/customerServiceList?email=${loggedInUser.email}`)
             .then(res => res.json())
             .then(data => setCustomerServiceList(data))
     }, [])
@@ -15,14 +16,18 @@ const CustomerServiceList = () => {
     return (
         <div>
             {customerServiceList.length === 0 && <p>Loading</p>}
-            {customerServiceList.map(service => (
-                <div>
-                    <img src={service.photo} alt="" />
-                    <p>{service.status}</p>
-                    <h4>{service.service}</h4>
-                    <p>{service.description}</p>
-                </div>
-            ))}
+            <div className='customer-service-container'>
+                {customerServiceList.map(service => (
+                    <div className='customer-service-cart'>
+                        <div className='service-card-top'>
+                            <img src={service.photo} alt="" />
+                            <p>{service.status}</p>
+                        </div>
+                        <h4>{service.service}</h4>
+                        <p>{service.description}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };

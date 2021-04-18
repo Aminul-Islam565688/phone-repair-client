@@ -7,6 +7,7 @@ import {
     useLocation
 } from "react-router-dom";
 import { UserContext } from "../../../App";
+import Footer from "../../Shared-Components/Footer/Footer";
 import Navbar from "../../Shared-Components/Navbar/Navbar";
 import { firebaseConfig } from './firebase.config';
 import './Login.css';
@@ -41,8 +42,9 @@ const Login = () => {
     return (
         <section className='login-section-main'>
             <Navbar></Navbar>
-            <h1>LogIn</h1>
-            <button onClick={handleLogin}>Google LogIn</button>
+            <h1 className='text-center phone-text'>LogIn</h1>
+            <button className='login-btn' onClick={handleLogin}>LogIn With Google</button>
+            <Footer></Footer>
         </section>
     );
 };
