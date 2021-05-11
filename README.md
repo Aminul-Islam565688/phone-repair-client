@@ -1,6 +1,6 @@
 ## Phonerepair Online Web Project | [www.phonerepair.com](https://phone-repair-1d188.web.app/)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) ![Build Status](https://img.shields.io/spiget/stars/9089) ![size](https://badge-size.herokuapp.com/{Aminul-Islam565688}/{phone-repair-client}/{main}/{phone-repair-client})
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) ![Build Status](https://img.shields.io/spiget/stars/9089) 
 
 [![security-headers](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aminul-islam-03907814b/) 
 
